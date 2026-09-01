@@ -289,25 +289,38 @@ body {
 }
 
 @media (max-width: 768px) {
+
+  /* 전체 */
   body {
     overflow-x: hidden;
   }
 
-  header,
-  nav {
-    padding-left: 20px;
-    padding-right: 20px;
+  .visual-wrapper {
+    width: 100%;
+    max-width: 100%;
   }
 
-  nav {
-    gap: 18px;
-    font-size: 13px;
+  /* HEADER */
+  .header {
+    padding: 20px 24px;
   }
 
+  .logo {
+    font-size: 22px;
+  }
+
+  .nav {
+    gap: 14px;
+  }
+
+  .nav a {
+    font-size: 12px;
+  }
+
+  /* HERO */
   .hero {
-    min-height: auto;
-    padding: 120px 24px 80px;
-    background-position: center top;
+    min-height: 100vh;
+    padding: 130px 28px 70px;
   }
 
   .hero-content {
@@ -315,69 +328,76 @@ body {
     max-width: 100%;
   }
 
-  .hero h1 {
+  .hero-title {
     font-size: 58px;
     line-height: 0.95;
   }
 
-  .hero p {
-    font-size: 18px;
-    line-height: 1.7;
+  .hero-description {
+    font-size: 15px;
+    line-height: 1.8;
   }
 
   .hero-buttons {
     display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
+    gap: 10px;
   }
 
-  .hero-buttons a {
-    flex: 1;
-    min-width: 140px;
-    text-align: center;
-  }
-
+  /* ABOUT */
   .about {
+    padding: 80px 28px;
+  }
+
+  .about-container {
     display: block;
-    padding: 70px 24px;
-  }
-
-  .about-left,
-  .about-right {
     width: 100%;
-    max-width: 100%;
   }
 
-  .about h2 {
-    font-size: 34px;
+  .about-heading {
+    width: 100%;
+    max-width: none;
+  }
+
+  .about-heading h2 {
+    width: 100%;
+    font-size: 30px;
     line-height: 1.35;
-    word-break: keep-all;
   }
 
-  .about p {
-    font-size: 15px;
+  .about-description {
+    width: 100%;
+    font-size: 14px;
     line-height: 1.8;
-    word-break: keep-all;
   }
 
   .about-cards {
+    width: 100%;
+    display: grid;
     grid-template-columns: 1fr;
-    gap: 22px;
-    margin-top: 36px;
+    gap: 16px;
+    margin-top: 40px;
   }
 
+  .about-card {
+    width: 100%;
+  }
+
+  /* PROJECTS */
   .projects {
-    padding: 70px 24px;
+    padding: 80px 28px;
   }
 
   .project-card {
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 32px 0;
+    display: block;
+    width: 100%;
   }
 
-  .project-card h3,
-  .project-card p {
-    word-break: keep-all;
+  .project-number {
+    margin-bottom: 20px;
   }
+
+  .project-content {
+    width: 100%;
+  }
+
 }
