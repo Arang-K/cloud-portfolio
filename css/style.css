@@ -401,3 +401,18 @@ body {
   }
 
 }
+
+@media (max-width: 768px) {
+  .about {
+    background:
+      linear-gradient(
+        rgba(245, 249, 255, 0.72),
+        rgba(245, 249, 255, 0.72)
+      ),
+      url("../images/hero-background.png");
+
+    background-size: cover;
+    background-position: 72% center;
+    background-repeat: no-repeat;
+  }
+}
