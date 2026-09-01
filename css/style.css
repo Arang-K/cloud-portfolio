@@ -289,7 +289,95 @@ body {
 }
 
 @media (max-width: 768px) {
-    .hero {
-        background-position: 65% top;
-    }
+  body {
+    overflow-x: hidden;
+  }
+
+  header,
+  nav {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  nav {
+    gap: 18px;
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 120px 24px 80px;
+    background-position: center top;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: 58px;
+    line-height: 0.95;
+  }
+
+  .hero p {
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero-buttons a {
+    flex: 1;
+    min-width: 140px;
+    text-align: center;
+  }
+
+  .about {
+    display: block;
+    padding: 70px 24px;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about h2 {
+    font-size: 34px;
+    line-height: 1.35;
+    word-break: keep-all;
+  }
+
+  .about p {
+    font-size: 15px;
+    line-height: 1.8;
+    word-break: keep-all;
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    margin-top: 36px;
+  }
+
+  .projects {
+    padding: 70px 24px;
+  }
+
+  .project-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 32px 0;
+  }
+
+  .project-card h3,
+  .project-card p {
+    word-break: keep-all;
+  }
 }
