@@ -254,8 +254,13 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.project-card + .project-card {
+    margin-top: 48px;
+}
+
 .project-card:hover {
-  box-shadow: 0 10px 24px rgba(64, 91, 130, 0.08);
+  box-shadow: 0 -6px 12px -10px rgba(64, 91, 130, 0.18),
+              0 6px 12px -10px rgba(64, 91, 130, 0.18);
 }
 
 .project-number {
@@ -369,7 +374,8 @@ body {
 }
 
 .skills-card:hover {
-  box-shadow: 0 10px 24px rgba(64, 91, 130, 0.08);
+  box-shadow: 0 -6px 12px -10px rgba(64, 91, 130, 0.18),
+              0 6px 12px -10px rgba(64, 91, 130, 0.18);
 }
 
 .skills-content {
@@ -437,7 +443,8 @@ body {
 }
 
 .contact-card:hover {
-  box-shadow: 0 10px 24px rgba(64, 91, 130, 0.08);
+  box-shadow: 0 -6px 12px -10px rgba(64, 91, 130, 0.18),
+              0 6px 12px -10px rgba(64, 91, 130, 0.18); 
 }
 
 .contact-card h2 {
@@ -483,8 +490,7 @@ body {
   }
 
   .visual-wrapper {
-    width: 100%;
-    max-width: 100%;
+    background-image: none;
   }
 
   /* HEADER */
@@ -507,27 +513,38 @@ body {
   /* HERO */
   .hero {
     min-height: 100vh;
-    padding: 130px 28px 70px;
+    padding: 120px 28px 70px;
+
+    background-image: url("../images/hero-mobile.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 
   .hero-content {
     width: 100%;
     max-width: 100%;
+    position: relative;
+    z-index: 2;
+    text-align: center;
   }
 
   .hero-title {
-    font-size: 58px;
-    line-height: 0.95;
+    font-size: 50px;
+    line-height: 1;
+    text-align: center;
   }
 
   .hero-description {
     font-size: 15px;
     line-height: 1.8;
+    text-align: center;
   }
 
   .hero-buttons {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    gap: 12px;
   }
 
   /* ABOUT */
@@ -543,6 +560,7 @@ body {
   .about-heading {
     width: 100%;
     max-width: none;
+    text-align: center;
   }
 
   .about-heading h2 {
@@ -555,6 +573,7 @@ body {
     width: 100%;
     font-size: 14px;
     line-height: 1.8;
+    text-align: center;
   }
 
   .about-cards {
@@ -567,26 +586,64 @@ body {
 
   .about-card {
     width: 100%;
+    text-align: center;
   }
 
   /* PROJECTS */
   .projects {
     padding: 80px 28px;
+    text-align: center;
   }
 
   .project-card {
     display: block;
     width: 100%;
+    text-align: center;
   }
 
   .project-number {
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .project-content {
     width: 100%;
+    text-align: center;
   }
 
+  .project-tech {
+  justify-content: center;
+  }
+  
+  .project-links {
+  justify-content: center;
+  }
+
+  /* SKILLS */
+  .skills-section {
+    padding: 80px 28px;
+    text-align: center;
+  }
+
+  .skills-content {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .skills {
+  justify-content: center;
+  }
+
+  /* CONTACT */
+  .contact {
+    padding: 60px 28px 80px;
+    text-align: center;
+  }
+
+  .contact-content {
+    padding-left: 0;
+    text-align: center;
+  }
 }
 
 @media (max-width: 768px) {
