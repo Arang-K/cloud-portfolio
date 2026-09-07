@@ -482,9 +482,24 @@ body {
   transform: translateY(-1px);
 }
 
+
+/* =========================
+   TABLET
+========================= */
+
+  .tablet-break {
+    display: none;
+  } 
+
+@media (min-width: 431px) and (max-width: 768px) {
+
+  .tablet-break {
+  display: block;
+  }
+}
+
 @media (max-width: 768px) {
 
-  /* 전체 */
   body {
     overflow-x: hidden;
   }
@@ -493,7 +508,6 @@ body {
     background-image: none;
   }
 
-  /* HEADER */
   .header {
     padding: 20px 24px;
   }
@@ -510,11 +524,9 @@ body {
     font-size: 12px;
   }
 
-  /* HERO */
   .hero {
     min-height: 100vh;
     padding: 120px 28px 70px;
-
     background-image: url("../images/hero-mobile.png");
     background-size: cover;
     background-position: center center;
@@ -547,9 +559,18 @@ body {
     gap: 12px;
   }
 
-  /* ABOUT */
   .about {
     padding: 80px 28px;
+    background:
+      linear-gradient(
+        rgba(245, 249, 255, 0.72),
+        rgba(245, 249, 255, 0.72)
+      ),
+      url("../images/hero-background.png");
+
+    background-size: cover;
+    background-position: 72% center;
+    background-repeat: no-repeat;
   }
 
   .about-container {
@@ -589,7 +610,6 @@ body {
     text-align: center;
   }
 
-  /* PROJECTS */
   .projects {
     padding: 80px 28px;
     text-align: center;
@@ -612,14 +632,13 @@ body {
   }
 
   .project-tech {
-  justify-content: center;
-  }
-  
-  .project-links {
-  justify-content: center;
+    justify-content: center;
   }
 
-  /* SKILLS */
+  .project-links {
+    justify-content: center;
+  }
+
   .skills-section {
     padding: 80px 28px;
     text-align: center;
@@ -631,10 +650,9 @@ body {
   }
 
   .skills {
-  justify-content: center;
+    justify-content: center;
   }
 
-  /* CONTACT */
   .contact {
     padding: 60px 28px 80px;
     text-align: center;
@@ -646,25 +664,81 @@ body {
   }
 }
 
-@media (max-width: 768px) {
-  .about {
-    background:
-      linear-gradient(
-        rgba(245, 249, 255, 0.72),
-        rgba(245, 249, 255, 0.72)
-      ),
-      url("../images/hero-background.png");
 
-    background-size: cover;
-    background-position: 72% center;
-    background-repeat: no-repeat;
+/* =========================
+   MOBILE
+========================= */
+
+.mobile-break {
+  display: none;
+}
+
+@media (max-width: 430px) {
+  .mobile-break {
+    display: block;
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 430px) {
+
+  .hero-title {
+    font-size: 44px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .about-heading h2 {
+    font-size: 28px;
+    line-height: 1.35;
+  }
+
+  .about-description {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .project-content h2 {
+    font-size: 30px;
+    line-height: 1.15;
+  }
+
+  .project-description {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .skills-content h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .skills span {
+    font-size: 12px;
+  }
+
+  .contact-content h2 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .contact-content p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+@media (max-width: 320px) {
+
   .hero-title {
     font-size: 40px;
-    line-height: 1.0;
+    line-height: 1;
   }
 
   .hero-subtitle {
@@ -687,42 +761,31 @@ body {
   }
 
   .project-content h2 {
-  font-size: 32px;
-  line-height: 1.15;
+    font-size: 32px;
+    line-height: 1.15;
   }
 
   .project-description {
-  font-size: 13px;
-  line-height: 1.7;
+    font-size: 13px;
+    line-height: 1.7;
   }
 
   .skills-content h2 {
-  font-size: 32px;
-  line-height: 1.2;
+    font-size: 32px;
+    line-height: 1.2;
   }
 
   .skills span {
-  font-size: 13px;
+    font-size: 13px;
   }
 
   .contact-content h2 {
-  font-size: 32px;
-  line-height: 1.2;
+    font-size: 32px;
+    line-height: 1.2;
   }
 
   .contact-content p {
-  font-size: 13px;
-  line-height: 1.7;
-  }
-}
-
-  .about-line {
-  display: inline;
-  }
-
-@media (max-width: 360px) {
-  .about-line {
-    display: block;
-    white-space: nowrap;
+    font-size: 13px;
+    line-height: 1.7;
   }
 }
