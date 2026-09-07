@@ -660,3 +660,69 @@ body {
     background-repeat: no-repeat;
   }
 }
+
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: 40px;
+    line-height: 1.0;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .about-title {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .about-description {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .project-content h2 {
+  font-size: 32px;
+  line-height: 1.15;
+  }
+
+  .project-description {
+  font-size: 13px;
+  line-height: 1.7;
+  }
+
+  .skills-content h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  }
+
+  .skills span {
+  font-size: 13px;
+  }
+
+  .contact-content h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  }
+
+  .contact-content p {
+  font-size: 13px;
+  line-height: 1.7;
+  }
+}
+
+  .about-line {
+  display: inline;
+  }
+
+@media (max-width: 360px) {
+  .about-line {
+    display: block;
+    white-space: nowrap;
+  }
+}
