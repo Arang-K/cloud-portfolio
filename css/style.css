@@ -730,10 +730,33 @@ body {
   }
 }
 
+/* ABOUT TITLE LINE CONTROL */
+
+.about-line {
+  display: inline;
+}
+
+/* 태블릿: 첫 줄 뒤에서만 줄바꿈 */
+@media (min-width: 431px) and (max-width: 768px) {
+  .about-title .line-1 {
+    display: block;
+  }
+}
+
+/* 일반 모바일: 세 줄로 고정 */
+@media (max-width: 430px) {
+  .about-title .about-line {
+    display: block;
+  }
+}
+
 
 /* =========================
    SMALL MOBILE
 ========================= */
+
+
+
 @media (max-width: 320px) {
 
   .hero-title {
@@ -742,7 +765,7 @@ body {
   }
 
   .hero-subtitle {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .hero-description {
@@ -750,13 +773,18 @@ body {
     line-height: 1.7;
   }
 
-  .about-title {
+  .about-heading .about-title {
     font-size: 24px;
     line-height: 1.4;
   }
 
+  .about-title .about-line {
+    display: block;
+    white-space: nowrap;
+  }
+
   .about-description {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.7;
   }
 
