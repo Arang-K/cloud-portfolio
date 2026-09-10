@@ -482,6 +482,11 @@ body {
   transform: translateY(-1px);
 }
 
+.contact-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
+}
 
 /* =========================
    TABLET
