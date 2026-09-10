@@ -817,3 +817,45 @@ body {
     line-height: 1.7;
   }
 }
+
+
+/* =========================
+   PROJECT FILTER
+========================= */
+
+.project-filters {
+    display: flex;
+    gap: 12px;
+    margin: 30px 0 50px;
+}
+
+.filter-btn {
+    padding: 9px 18px;
+
+    border: 1px solid rgba(39, 70, 111, 0.25);
+    background: transparent;
+
+    font-size: 11px;
+    letter-spacing: 0.12em;
+
+    color: #58759a;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.filter-btn:hover {
+    border-color: #27466f;
+    color: #27466f;
+}
+
+.filter-btn.active {
+    background: #27466f;
+    border-color: #27466f;
+    color: white;
+}
+
+.project-card.hidden {
+    display: none;
+}

@@ -54,13 +54,10 @@
             <p class="section-label">ABOUT ME</p>
 
             <h2 class="about-title">
-              기술로 가치를 만들고,
-              <br class="tablet-break">
-              <br class="mobile-break">
-              클라우드로 경험을
-              <br class="mobile-break">
-              설계합니다.
-              </h2>
+              <span class="about-line line-1">기술로 가치를 만들고,</span>
+              <span class="about-line line-2">클라우드로 경험을</span>
+              <span class="about-line line-3">설계합니다.</span>
+            </h2>
 
             <p class="about-description">
               AWS 기반의 서비스를 설계하고,
@@ -106,208 +103,229 @@
     </section>
     </div>
 
+
 <section class="projects" id="projects">
 
-    <p class="section-label">PROJECTS</p>
+  <p class="section-label">PROJECTS</p>
 
-    <div class="project-card">
+  <div class="project-filters">
+    <button class="filter-btn active" data-filter="all">ALL</button>
+    <button class="filter-btn" data-filter="cloud">CLOUD</button>
+    <button class="filter-btn" data-filter="landing">LANDING</button>
+  </div>
 
-        <div class="project-number">01</div>
 
-        <div class="project-content">
+  <!-- 01 CLOUD PORTFOLIO -->
+  <div class="project-card" data-category="cloud">
 
-            <h2>Cloud Portfolio</h2>
+    <div class="project-number">01</div>
 
-            <p class="project-description">
-               AWS 기반의 정적 웹사이트를 구축하고, GitHub와 AWS Amplify를 연결해
-               <br class="tablet-break">
-               CI/CD 자동 배포 환경을 구성했습니다.
-               <br class="tablet-break">
-               CloudFront를 활용한 콘텐츠 전송과 Route 53 기반의 도메인 연결,
-               <br class="tablet-break">
-               IAM 및 OIDC를 활용한 안전한 배포 구조를 적용했습니다.
-            </p>
+    <div class="project-content">
 
-            <div class="project-tech">
-                <span>S3</span>
-                <span>CloudFront</span>
-                <span>Route 53</span>
-                <span>GitHub Actions</span>
-                <span>OIDC</span>
-                <span>IAM</span>
-            </div>
+      <h2>Cloud Portfolio</h2>
 
-        <div class="project-links">
-         <a href="https://github.com/Arang-K/cloud-portfolio" target="_blank">GitHub ↗</a>
-         <a href="https://main.d2g7v4axn86tz6.amplifyapp.com" target="_blank">Live Site ↗</a>
-        </div>
+      <p class="project-description">
+        AWS 기반의 정적 웹사이트를 구축하고, GitHub와 AWS Amplify를 연결해
+        <br class="tablet-break">
+        CI/CD 자동 배포 환경을 구성했습니다.
+        <br class="tablet-break">
+        CloudFront를 활용한 콘텐츠 전송과 Route 53 기반의 도메인 연결,
+        <br class="tablet-break">
+        IAM 및 OIDC를 활용한 안전한 배포 구조를 적용했습니다.
+      </p>
 
-        <p class="project-status">Deployed with AWS Amplify · CI/CD enabled</p>
+      <div class="project-tech">
+        <span>S3</span>
+        <span>CloudFront</span>
+        <span>Route 53</span>
+        <span>GitHub Actions</span>
+        <span>OIDC</span>
+        <span>IAM</span>
+      </div>
 
-        <p class="project-result">
-           Automated deployment from GitHub to AWS
-        </p>
-        </div>
+      <div class="project-links">
+        <a href="https://github.com/Arang-K/cloud-portfolio" target="_blank">GitHub ↗</a>
+        <a href="https://main.d2g7v4axn86tz6.amplifyapp.com" target="_blank">Live Site ↗</a>
+      </div>
+
+      <p class="project-status">
+        Deployed with AWS Amplify · CI/CD enabled
+      </p>
+
+      <p class="project-result">
+        Automated deployment from GitHub to AWS
+      </p>
 
     </div>
 
-    <div class="project-card">
+  </div>
+
+
+  <!-- 02 PUFFLET CAFE -->
+  <div class="project-card" data-category="landing">
 
     <div class="project-number">02</div>
 
     <div class="project-content">
 
-    <h2>Pufflet Cafe</h2>
+      <h2>Pufflet Cafe</h2>
 
-    <p class="project-description">
-       카페 브랜드를 위한 감성적인 반응형 랜딩페이지를 제작했습니다.
-       <br class="tablet-break">
-       브랜드 분위기와 메뉴, 공간 이미지를 한 페이지 안에서 자연스럽게 전달하도록 구성했습니다.
-    </p>
+      <p class="project-description">
+        카페 브랜드를 위한 감성적인 반응형 랜딩페이지를 제작했습니다.
+        <br class="tablet-break">
+        브랜드 분위기와 메뉴, 공간 이미지를 한 페이지 안에서 자연스럽게 전달하도록 구성했습니다.
+      </p>
 
-    <div class="project-tech">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Responsive Web</span>
+      <div class="project-tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Responsive Web</span>
+      </div>
+
+      <div class="project-links">
+        <a href="https://github.com/Arang-K/Pufflet-cafe-landing" target="_blank">GitHub ↗</a>
+        <a href="https://main.d1d4b9xoh8wah6.amplifyapp.com" target="_blank">Live Site ↗</a>
+      </div>
+
+      <p class="project-status">
+        Responsive landing page
+      </p>
+
+      <p class="project-result">
+        Designed and developed for a cafe brand concept
+      </p>
+
     </div>
-
-    <div class="project-links">
-      <a href="https://github.com/Arang-K/Pufflet-cafe-landing" target="_blank">GitHub ↗</a>
-      <a href="https://main.d1d4b9xoh8wah6.amplifyapp.com" target="_blank">Live Site ↗</a>
-    </div>
-
-    <p class="project-status">
-      Responsive landing page
-    </p>
-
-    <p class="project-result">
-      Designed and developed for a cafe brand concept
-    </p>
 
   </div>
 
-</div>
 
-<div class="project-card">
+  <!-- 03 LUMIERE SKIN -->
+  <div class="project-card" data-category="landing">
 
-  <div class="project-number">03</div>
+    <div class="project-number">03</div>
 
-  <div class="project-content">
+    <div class="project-content">
 
-    <h2>Lumiere Skin</h2>
+      <h2>Lumiere Skin</h2>
 
-    <p class="project-description">
-      스킨케어 브랜드를 위한 세련된 반응형 랜딩페이지를 제작했습니다.
-      <br class="tablet-break">
-      제품의 고급스러운 이미지와 핵심 메시지가 자연스럽게 전달되도록 구성했습니다.
-    </p>
+      <p class="project-description">
+        스킨케어 브랜드를 위한 세련된 반응형 랜딩페이지를 제작했습니다.
+        <br class="tablet-break">
+        제품의 고급스러운 이미지와 핵심 메시지가 자연스럽게 전달되도록 구성했습니다.
+      </p>
 
-    <div class="project-tech">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Responsive Web</span>
+      <div class="project-tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Responsive Web</span>
+      </div>
+
+      <div class="project-links">
+        <a href="https://github.com/Arang-K/lumiere-skin-landing" target="_blank">GitHub ↗</a>
+        <a href="https://main.dybr212fyjkmz.amplifyapp.com" target="_blank">Live Site ↗</a>
+      </div>
+
+      <p class="project-status">
+        Responsive skincare landing page
+      </p>
+
+      <p class="project-result">
+        Designed and developed for a beauty brand concept
+      </p>
+
     </div>
-
-    <div class="project-links">
-      <a href="https://github.com/Arang-K/lumiere-skin-landing" target="_blank">GitHub ↗</a>
-      <a href="https://main.dybr212fyjkmz.amplifyapp.com" target="_blank">Live Site ↗</a>
-    </div>
-
-    <p class="project-status">
-      Responsive skincare landing page
-    </p>
-
-    <p class="project-result">
-      Designed and developed for a beauty brand concept
-    </p>
 
   </div>
 
-</div>
 
-<div class="project-card">
+  <!-- 04 FITNESS LANDING -->
+  <div class="project-card" data-category="landing">
 
-  <div class="project-number">04</div>
+    <div class="project-number">04</div>
 
-  <div class="project-content">
+    <div class="project-content">
 
-    <h2>Fitness Landing</h2>
+      <h2>Fitness Landing</h2>
 
-    <p class="project-description">
-      피트니스 브랜드를 위한 역동적인 반응형 랜딩페이지를 제작했습니다.
-      <br class="tablet-break">
-      강한 비주얼과 명확한 CTA를 중심으로 프로그램과 브랜드 이미지를
-      <br class="tablet-break">
-      효과적으로 전달하도록 구성했습니다.
-    </p>
+      <p class="project-description">
+        피트니스 브랜드를 위한 역동적인 반응형 랜딩페이지를 제작했습니다.
+        <br class="tablet-break">
+        강한 비주얼과 명확한 CTA를 중심으로 프로그램과 브랜드 이미지를
+        <br class="tablet-break">
+        효과적으로 전달하도록 구성했습니다.
+      </p>
 
-    <div class="project-tech">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Responsive Web</span>
+      <div class="project-tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Responsive Web</span>
+      </div>
+
+      <div class="project-links">
+        <a href="https://github.com/Arang-K/fitness-landing" target="_blank">GitHub ↗</a>
+        <a href="https://main.d3lxgddofqe0zg.amplifyapp.com" target="_blank">Live Site ↗</a>
+      </div>
+
+      <p class="project-status">
+        Responsive fitness landing page
+      </p>
+
+      <p class="project-result">
+        Designed and developed for a fitness brand concept
+      </p>
+
     </div>
-
-    <div class="project-links">
-      <a href="https://github.com/Arang-K/fitness-landing" target="_blank">GitHub ↗</a>
-      <a href="https://main.d3lxgddofqe0zg.amplifyapp.com" target="_blank">Live Site ↗</a>
-    </div>
-
-    <p class="project-status">
-      Responsive fitness landing page
-    </p>
-
-    <p class="project-result">
-      Designed and developed for a fitness brand concept
-    </p>
 
   </div>
 
-</div>
 
-<div class="project-card">
+  <!-- 05 TOKYO NIGHT -->
+  <div class="project-card" data-category="landing">
 
-  <div class="project-number">05</div>
+    <div class="project-number">05</div>
 
-  <div class="project-content">
+    <div class="project-content">
 
-    <h2>Tokyo Night</h2>
+      <h2>Tokyo Night</h2>
 
-    <p class="project-description">
-      도쿄의 야경과 네온 감성을 활용한 반응형 랜딩페이지를 제작했습니다.
-      <br class="tablet-break">
-      강한 분위기와 시각적 몰입감을 중심으로 도시의 무드가
-      <br class="tablet-break">
-      자연스럽게 전달되도록 구성했습니다.
-    </p>
+      <p class="project-description">
+        도쿄의 야경과 네온 감성을 활용한 반응형 랜딩페이지를 제작했습니다.
+        <br class="tablet-break">
+        강한 분위기와 시각적 몰입감을 중심으로 도시의 무드가
+        <br class="tablet-break">
+        자연스럽게 전달되도록 구성했습니다.
+      </p>
 
-    <div class="project-tech">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Responsive Web</span>
+      <div class="project-tech">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Responsive Web</span>
+      </div>
+
+      <div class="project-links">
+        <a href="https://github.com/Arang-K/tokyo-night-landing" target="_blank">GitHub ↗</a>
+        <a href="https://main.d2ywregkdjd8p9.amplifyapp.com" target="_blank">Live Site ↗</a>
+      </div>
+
+      <p class="project-status">
+        Responsive visual landing page
+      </p>
+
+      <p class="project-result">
+        Designed and developed as a visual web design concept
+      </p>
+
     </div>
-
-    <div class="project-links">
-      <a href="https://github.com/Arang-K/tokyo-night-landing" target="_blank">GitHub ↗</a>
-      <a href="https://main.d2ywregkdjd8p9.amplifyapp.com" target="_blank">Live Site ↗</a>
-    </div>
-
-    <p class="project-status">
-      Responsive visual landing page
-    </p>
-
-    <p class="project-result">
-      Designed and developed as a visual web design concept
-    </p>
 
   </div>
 
-</div>
+</section>    
 
-</section>
 
 <section class="skills-section" id="skills">
   <p class="section-label">SKILLS</p>
@@ -349,6 +367,8 @@
   </div>
 </section>
 </main>
+
+<script src="js/main.js"></script>
 
 </body>
 </html>
