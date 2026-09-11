@@ -1,0 +1,274 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10"
+            refX="9" refY="3" orient="auto"
+            markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#6B7F9F"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="720" fill="#F7F9FC"/>
+
+  <!-- Title -->
+  <text x="600" y="55"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="28"
+        font-weight="700"
+        fill="#365A88">
+    Cloud Portfolio Architecture
+  </text>
+
+  <text x="600" y="85"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="14"
+        fill="#7B8CA6">
+    AWS Deployment Architecture
+  </text>
+
+  <!-- GitHub -->
+  <rect x="475" y="115" width="250" height="70"
+        rx="12"
+        fill="#FFFFFF"
+        stroke="#A9B8CC"
+        stroke-width="2"/>
+
+  <text x="600" y="145"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="18"
+        font-weight="700"
+        fill="#365A88">
+    GitHub
+  </text>
+
+  <text x="600" y="168"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="13"
+        fill="#7B8CA6">
+    Source Repository
+  </text>
+
+  <!-- Split arrows -->
+  <line x1="560" y1="185" x2="350" y2="250"
+        stroke="#6B7F9F"
+        stroke-width="2"
+        marker-end="url(#arrow)"/>
+
+  <line x1="640" y1="185" x2="850" y2="250"
+        stroke="#6B7F9F"
+        stroke-width="2"
+        marker-end="url(#arrow)"/>
+
+  <!-- Left Path -->
+  <text x="300" y="225"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="13"
+        font-weight="700"
+        fill="#7B8CA6">
+    Amplify Deployment
+  </text>
+
+  <rect x="180" y="260" width="240" height="70"
+        rx="12"
+        fill="#FFFFFF"
+        stroke="#A9B8CC"
+        stroke-width="2"/>
+
+  <text x="300" y="290"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="18"
+        font-weight="700"
+        fill="#365A88">
+    AWS Amplify
+  </text>
+
+  <text x="300" y="313"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="13"
+        fill="#7B8CA6">
+    Build &amp; Deploy
+  </text>
+
+  <line x1="300" y1="330" x2="300" y2="395"
+        stroke="#6B7F9F"
+        stroke-width="2"
+        marker-end="url(#arrow)"/>
+
+  <rect x="180" y="405" width="240" height="70"
+        rx="12"
+        fill="#FFFFFF"
+        stroke="#A9B8CC"
+        stroke-width="2"/>
+
+  <text x="300" y="435"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="18"
+        font-weight="700"
+        fill="#365A88">
+    Live Website
+  </text>
+
+  <text x="300" y="458"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="13"
+        fill="#7B8CA6">
+    Amplify Hosting
+  </text>
+
+  <!-- Right Path -->
+  <text x="900" y="225"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="13"
+        font-weight="700"
+        fill="#7B8CA6">
+    GitHub Actions Deployment
+  </text>
+
+  <rect x="780" y="260" width="240" height="70"
+        rx="12"
+        fill="#FFFFFF"
+        stroke="#A9B8CC"
+        stroke-width="2"/>
+
+  <text x="900" y="290"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="18"
+        font-weight="700"
+        fill="#365A88">
+    GitHub Actions
+  </text>
+
+  <text x="900" y="313"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="13"
+        fill="#7B8CA6">
+    CI/CD Workflow
+  </text>
+
+  <line x1="900" y1="330" x2="900" y2="375"
+        stroke="#6B7F9F"
+        stroke-width="2"
+        marker-end="url(#arrow)"/>
+
+  <rect x="800" y="385" width="200" height="60"
+        rx="12"
+        fill="#FFFFFF"
+        stroke="#A9B8CC"
+        stroke-width="2"/>
+
+  <text x="900" y="412"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="17"
+        font-weight="700"
+        fill="#365A88">
+    OIDC
+  </text>
+
+  <text x="900" y="432"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="12"
+        fill="#7B8CA6">
+    Authentication
+  </text>
+
+  <line x1="900" y1="445" x2="900" y2="485"
+        stroke="#6B7F9F"
+        stroke-width="2"
+        marker-end="url(#arrow)"/>
+
+  <rect x="800" y="495" width="200" height="60"
+        rx="12"
+        fill="#FFFFFF"
+        stroke="#A9B8CC"
+        stroke-width="2"/>
+
+  <text x="900" y="522"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="17"
+        font-weight="700"
+        fill="#365A88">
+    IAM Role
+  </text>
+
+  <text x="900" y="542"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="12"
+        fill="#7B8CA6">
+    AWS Permissions
+  </text>
+
+  <line x1="900" y1="555" x2="900" y2="595"
+        stroke="#6B7F9F"
+        stroke-width="2"
+        marker-end="url(#arrow)"/>
+
+  <rect x="660" y="605" width="180" height="60"
+        rx="12"
+        fill="#FFFFFF"
+        stroke="#A9B8CC"
+        stroke-width="2"/>
+
+  <text x="750" y="640"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="18"
+        font-weight="700"
+        fill="#365A88">
+    Amazon S3
+  </text>
+
+  <line x1="840" y1="635" x2="955" y2="635"
+        stroke="#6B7F9F"
+        stroke-width="2"
+        marker-end="url(#arrow)"/>
+
+  <rect x="965" y="605" width="180" height="60"
+        rx="12"
+        fill="#FFFFFF"
+        stroke="#A9B8CC"
+        stroke-width="2"/>
+
+  <text x="1055" y="640"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="18"
+        font-weight="700"
+        fill="#365A88">
+    CloudFront
+  </text>
+
+  <!-- Notes -->
+  <text x="300" y="525"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="13"
+        fill="#7B8CA6">
+    Current portfolio live site
+  </text>
+
+  <text x="300" y="548"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="13"
+        fill="#7B8CA6">
+    GitHub push triggers automatic deployment
+  </text>
+
+</svg>

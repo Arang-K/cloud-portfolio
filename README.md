@@ -96,6 +96,10 @@ GitHub Actions가 실행되면 OIDC를 통해 AWS IAM Role을 사용하여 안�
 - GitHub Actions: Workflow를 이용한 S3 / CloudFront 자동 배포
 - OIDC: GitHub Actions와 AWS 사이의 안전한 인증
 
+## Architecture Diagram
+
+![Cloud Portfolio Architecture](images/aws-architecture.svg)
+
 ## Projects
 
 ### Cloud Portfolio
