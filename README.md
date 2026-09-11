@@ -12,26 +12,17 @@ GitHub와 AWS Amplify를 연결해 코드 변경 시 자동으로 배포되는 C
 
 - AWS
 - AWS Amplify
+- Amazon S3
+- CloudFront
+- IAM
+- OIDC
+- GitHub Actions
 - HTML5
 - CSS3
 - JavaScript
 - Git
 - GitHub
 - Responsive Web Design
-
-## 배포 구조
-
-```text
-Local Development
-        ↓
-      GitHub
-        ↓
-   AWS Amplify
-        ↓
-   Build & Deploy
-        ↓
-    Live Website
-```
 
 ## 주요 기능
 
