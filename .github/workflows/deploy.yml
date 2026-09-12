@@ -20,7 +20,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4          
       - name: Deploy to S3
-        run: aws s3 sync . s3://arang-cloud-portfolio --delete        
+        run: aws s3 sync . s3://arang-cloud-portfolio --delete --exclude ".git/*" --exclude ".github/*" --exclude ".gitignore" --exclude "README.md" --exclude ".DS_Store"        
       - name: Invalidate CloudFront cache
         run: aws cloudfront create-invalidation --distribution-id E1POV5RPH031AS --paths "/*"
               
