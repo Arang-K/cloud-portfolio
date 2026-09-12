@@ -104,7 +104,7 @@ AWS Amplify 자동 배포와 GitHub Actions 기반 AWS 배포 파이프라인을
 ## 향후 개선
 
 - Custom Domain 연결
-- AWS Architecture 확장
+- Multi-environment Architecture 확장
 - 추가 Cloud Project 구축
 - 보안 구성 강화
 
