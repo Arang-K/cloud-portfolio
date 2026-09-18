@@ -396,6 +396,8 @@ contactForm?.addEventListener("submit", async (event) => {
 
   contactStatus.textContent = "Sending...";
 
+  contactStatus.classList.remove("is-success");
+
   try {
     const response = await fetch(
       "https://hhe6bd4kgd.execute-api.ap-northeast-2.amazonaws.com/contact",
@@ -417,7 +419,7 @@ contactForm?.addEventListener("submit", async (event) => {
       throw new Error("Request failed");
     }
 
-    contactStatus.textContent = "Message sent successfully.";
+    contactStatus.textContent = "Thanks — I’ll get back to you soon.";
     contactForm.reset();
 
   } catch (error) {

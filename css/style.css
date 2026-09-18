@@ -1182,3 +1182,7 @@ html {
   color: #596267;
 }
 
+#portfolio #contact-status.is-success {
+  color: #00bc91;
+}
+
