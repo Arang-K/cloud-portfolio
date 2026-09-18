@@ -15,11 +15,12 @@
         <div class="links">
           <a href="https://github.com/Arang-K" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
           <a
-           href="https://mail.google.com/mail/?view=cm&fs=1&to=arangdevstudio%40gmail.com"
-           target="_blank"
-           rel="noopener noreferrer"
-           >
-           Email ↗
+            href="#contact-panel"
+            class="contact-toggle"
+            aria-expanded="false"
+            aria-controls="contact-panel"
+          >
+            Email ↗
           </a>
         </div>
       </div>
@@ -445,6 +446,82 @@
   </div>
 </section>
 
+
+<!-- Contact 패널 -->
+<section
+  class="contact-panel"
+  id="contact-panel"
+  aria-hidden="true"
+>
+  <div class="contact-card">
+
+    <button
+      class="contact-close"
+      type="button"
+      aria-label="Close contact form"
+    >
+      ×
+    </button>
+
+    <p class="contact-eyebrow">CONTACT</p>
+    <h2>Let’s work together.</h2>
+
+    <form id="contact-form">
+
+      <label>
+        Name
+        <input
+          type="text"
+          id="contact-name"
+          name="name"
+          required
+        >
+      </label>
+
+      <label>
+        Email
+        <input
+          type="email"
+          id="contact-email"
+          name="email"
+          required
+        >
+      </label>
+
+      <label>
+        Inquiry type
+        <select
+          id="contact-type"
+          name="type"
+          required
+        >
+          <option value="">Select</option>
+          <option value="Landing Page">Landing Page</option>
+          <option value="AWS Deployment">AWS Deployment</option>
+          <option value="Cloud Project">Cloud Project</option>
+          <option value="Other">Other</option>
+        </select>
+      </label>
+
+      <label>
+        Message
+        <textarea
+          id="contact-message"
+          name="message"
+          rows="5"
+          required
+        ></textarea>
+      </label>
+
+      <button class="contact-submit" type="submit">
+        Send
+      </button>
+
+      <p id="contact-status" aria-live="polite"></p>
+
+    </form>
+  </div>
+</section>
 
   <div class="foot">
     <button class="motion" type="button" aria-pressed="false" aria-label="Pause animation">Pause motion</button>

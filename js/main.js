@@ -336,3 +336,92 @@
     });
   });
 })();
+
+
+const contactToggle = document.querySelector(".contact-toggle");
+const contactPanel = document.getElementById("contact-panel");
+const contactClose = document.querySelector(".contact-close");
+
+function openContactPanel() {
+  if (!contactPanel) return;
+
+  contactPanel.classList.add("is-open");
+  contactPanel.setAttribute("aria-hidden", "false");
+
+  if (contactToggle) {
+    contactToggle.setAttribute("aria-expanded", "true");
+  }
+}
+
+function closeContactPanel() {
+  if (!contactPanel) return;
+
+  contactPanel.classList.remove("is-open");
+  contactPanel.setAttribute("aria-hidden", "true");
+
+  if (contactToggle) {
+    contactToggle.setAttribute("aria-expanded", "false");
+  }
+}
+
+contactToggle?.addEventListener("click", (event) => {
+  event.preventDefault();
+  openContactPanel();
+});
+
+contactClose?.addEventListener("click", closeContactPanel);
+
+contactPanel?.addEventListener("click", (event) => {
+  if (event.target === contactPanel) {
+    closeContactPanel();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    closeContactPanel();
+  }
+});
+
+const contactForm = document.getElementById("contact-form");
+const contactStatus = document.getElementById("contact-status");
+
+contactForm?.addEventListener("submit", async (event) => {
+  event.preventDefault();
+
+  const name = document.getElementById("contact-name").value.trim();
+  const email = document.getElementById("contact-email").value.trim();
+  const type = document.getElementById("contact-type").value;
+  const message = document.getElementById("contact-message").value.trim();
+
+  contactStatus.textContent = "Sending...";
+
+  try {
+    const response = await fetch(
+      "https://hhe6bd4kgd.execute-api.ap-northeast-2.amazonaws.com/contact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          type,
+          message
+        })
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error("Request failed");
+    }
+
+    contactStatus.textContent = "Message sent successfully.";
+    contactForm.reset();
+
+  } catch (error) {
+    console.error(error);
+    contactStatus.textContent = "Something went wrong. Please try again.";
+  }
+});
