@@ -1,386 +1,475 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Arang | Cloud & Web Developer</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arang | Cloud &amp; Web Developer</title>
+    <meta name="description" content="Arang의 Cloud &amp; Web 포트폴리오. AWS 자동 배포와 웹 프로젝트를 소개합니다.">
     <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-    <header class="header">
-        <div class="logo">ARANG</div>
-
-        <nav class="nav">
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <main>
-
-    <div class="visual-wrapper">   
-
-    <section class="hero">
-
-        <div class="hero-content">
-            <p class="hero-intro">Cloud & WebDeveloper</p>
-
-            <h1 class="hero-title">
-                Hi, I'm Arang
-            </h1>
-
-            <p class="hero-description">
-                AWS 기반 서비스를 설계하고 구축합니다. <br>
-                기술과 감성이 만나는 경험을 만들고 싶습니다.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#projects" class="button">View Projects</a>
-                <a href="#contact" class="button">Contact Me</a>
-            </div>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <div id="portfolio">
+      <div class="top">
+        <span class="eyebrow">PERSONAL PORTFOLIO</span>
+        <div class="links">
+          <a href="https://github.com/Arang-K" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a
+           href="https://mail.google.com/mail/?view=cm&fs=1&to=arangdevstudio%40gmail.com"
+           target="_blank"
+           rel="noopener noreferrer"
+           >
+           Email ↗
+          </a>
         </div>
+      </div>
 
-    </section>
+      <section class="intro" aria-label="About Arang">
+  <div class="feather-background" aria-hidden="true">
+    <canvas id="feather-canvas"></canvas>
+  </div>
 
-    <section class="about" id="about">
-    <div class="about-container">
+  <div class="name-wrap">
+    <h1>
+      <button
+        class="name-button"
+        type="button"
+        aria-expanded="false"
+        aria-controls="about-details"
+      >
+        Arang.
+      </button>
+    </h1>
 
-        <div class="about-heading">
-            <p class="section-label">ABOUT ME</p>
+    <span class="mark" aria-hidden="true">✳</span>
+  </div>
 
-            <h2 class="about-title">
-              <span class="about-line line-1">기술로 가치를 만들고,</span>
-              <span class="about-line line-2">클라우드로 경험을</span>
-              <span class="about-line line-3">설계합니다.</span>
-            </h2>
+  <h2 class="about-role">CLOUD &amp; WEB DEVELOPER</h2>
 
-            <p class="about-description">
-              AWS 기반의 서비스를 설계하고,
-              <br class="mobile-break">
-              확장 가능하며 유지보수하기 좋은 클라우드 아키텍처를
-              <br class="mobile-break">
-              구축합니다.
-              </p>
+
+  <div class="about-reveal" id="about-details" inert>
+    <div class="about-clip">
+      <div class="about-content">
+
+        <p class="about-lead">
+          I build websites<br>
+          and bring them to life on AWS.
+        </p>
+
+        <p>
+          From responsive interfaces to automated deployment,<br>
+          I connect what you see with how it runs.
+        </p>
+
+        <p>
+          I've built with Amplify, S3 and CloudFront,<br>
+          and set up GitHub Actions with OIDC<br>
+          to deploy updates without stored AWS access keys.
+        </p>
+
+        <p>
+          I care about thoughtful details,<br>
+          clear architecture, and understanding what I build.
+        </p>
+
+        <span class="about-credential">
+          AWS CERTIFIED SOLUTIONS ARCHITECT — ASSOCIATE
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <a class="glass-work-button" href="#selected-work">
+  <img
+    class="glass-work-image"
+    src="images/glass-button.png"
+    alt=""
+    aria-hidden="true"
+  >
+  <span class="glass-work-label">Explore my work</span>
+  <span class="glass-work-arrow" aria-hidden="true">
+  <svg
+    width="15"
+    height="15"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linejoin="round"
+  >
+    <path d="M7 3H17V10H22L12 21L2 10H7Z"/>
+  </svg>
+</span>
+</a>
+
+</section>
+
+
+      <section class="work" id="selected-work" aria-label="Selected work">
+  <div class="work-head">
+    <span>SELECTED WORK</span>
+    <span>2026</span>
+  </div>
+
+  <!-- 01 Cloud -->
+  <div class="row cloud-row">
+    <span class="number">01</span>
+
+    <div class="project-copy">
+      <a
+        class="project"
+        href="https://main.d2g7v4axn86tz6.amplifyapp.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Cloud Portfolio <span class="arrow">↗</span>
+      </a>
+
+      <span class="description">
+        OIDC 인증부터 S3·CloudFront 자동 배포까지.
+      </span>
+
+      <details class="cloud-details">
+        <summary>구축 과정과 선택 이유</summary>
+
+        <div class="cloud-story">
+          <h3>목표</h3>
+          <p>
+            웹사이트 수정 후 파일을 매번 직접 업로드하는 대신,
+            GitHub에 코드를 올리면 AWS에 자동으로 배포되도록 구성했습니다.
+          </p>
+
+          <h3>직접 구성한 구조</h3>
+          <p>
+            Amplify의 GitHub 연동 배포와,
+            S3·CloudFront를 사용하는 배포 방식을 각각 구성했습니다.
+            S3 배포는 GitHub Actions에서 실행하고,
+            배포 후 CloudFront 캐시 무효화까지 연결했습니다.
+          </p>
+
+          <h3>인증 방식의 선택</h3>
+          <p>
+            GitHub에 장기 AWS 액세스 키를 저장하는 대신,
+            OIDC와 IAM 역할을 사용해 배포 작업에 필요한
+            임시 자격 증명을 발급받도록 구성했습니다.
+          </p>
+
+          <h3>확인할 수 있는 결과</h3>
+          <p>
+            main 브랜치에 코드를 push하면 배포가 실행됩니다.
+            GitHub에서 워크플로 설정과 README의 배포 구조를
+            확인할 수 있습니다.
+          </p>
         </div>
-
-        <div class="about-cards">
-
-            <div class="about-card">
-                <div class="about-icon">☁</div>
-                <h3>CLOUD ARCHITECTURE</h3>
-                <p>
-                    AWS 기반의 안정적이고<br>
-                    확장 가능한 시스템 설계
-                </p>
-            </div>
-
-            <div class="about-card">
-                <div class="about-icon">&lt;/&gt;</div>
-                <h3>WEB DEVELOPMENT</h3>
-                <p>
-                    직관적인 UI와<br>
-                    효율적인 코드 구현
-                </p>
-            </div>
-
-            <div class="about-card">
-                <div class="about-icon">↗</div>
-                <h3>CONTINUOUS GROWTH</h3>
-                <p>
-                    끊임없이 배우고<br>
-                    더 나은 솔루션을 추구
-                </p>
-            </div>
-
-        </div>
+      </details>
     </div>
 
-    </section>
+    <div class="project-links" aria-label="Cloud Portfolio 링크">
+      <a
+        href="https://main.d2g7v4axn86tz6.amplifyapp.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+      <svg
+        class="link-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+      <rect x="3" y="4" width="18" height="12" rx="2"/>
+      <path d="M12 16v4M8 20h8"/>
+      </svg>
+      <span>Live</span>
+      </a>
+
+      <a
+        href="https://github.com/Arang-K/cloud-portfolio"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+      <svg
+        class="link-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+      <path d="m7 7-5 5 5 5"/>
+      <path d="m17 7 5 5-5 5"/>
+      <path d="m14 4-4 16"/>
+      </svg>
+      <span>GitHub</span>
+      </a>
     </div>
-
-
-<section class="projects" id="projects">
-
-  <p class="section-label">PROJECTS</p>
-
-  <div class="project-filters">
-    <button class="filter-btn active" data-filter="all">ALL</button>
-    <button class="filter-btn" data-filter="cloud">CLOUD</button>
-    <button class="filter-btn" data-filter="landing">LANDING</button>
   </div>
 
+  <!-- 02 Pufflet -->
+  <div class="row image-row pufflet-row">
+    <span class="number">02</span>
 
-  <!-- 01 CLOUD PORTFOLIO -->
-  <div class="project-card" data-category="cloud">
-
-    <div class="project-number">01</div>
-
-    <div class="project-content">
-
-      <h2>Cloud Portfolio</h2>
-
-      <p class="project-description">
-        AWS 기반의 정적 웹사이트를 구축하고, GitHub와 AWS Amplify를 연결해
-        <br class="tablet-break">
-        CI/CD 자동 배포 환경을 구성했습니다.
-        <br class="tablet-break">
-        코드 변경 시 자동으로 빌드 및 배포되는 웹 호스팅 환경을 구축하고,
-        <br class="tablet-break">
-        반응형 포트폴리오 사이트를 운영하고 있습니다.
-      </p>
-
-      <div class="project-tech">
-        <span>S3</span>
-        <span>CloudFront</span>
-        <span>GitHub Actions</span>
-        <span>OIDC</span>
-        <span>IAM</span>
-        <span>AWS Amplify</span>
-        <span>GitHub</span>
-      </div>
-
-      <div class="project-links">
-        <a href="https://github.com/Arang-K/cloud-portfolio" target="_blank">GitHub ↗</a>
-        <a href="https://main.d2g7v4axn86tz6.amplifyapp.com" target="_blank">Live Site ↗</a>
-      </div>
-
-      <p class="project-status">
-        Deployed with AWS Amplify · CI/CD enabled
-      </p>
-
-      <p class="project-result">
-        Automated deployment from GitHub to AWS
-      </p>
-
+    <div class="project-copy">
+      <a
+        class="project"
+        href="https://main.d1d4b9xoh8wah6.amplifyapp.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Pufflet Cafe <span class="arrow">↗</span>
+      </a>
+      <span class="description">
+        브랜드 분위기와 메뉴 탐색을 담은 카페 웹사이트.
+      </span>
     </div>
 
+    <div class="project-links" aria-label="Pufflet Cafe 링크">
+      <a
+        href="https://main.d1d4b9xoh8wah6.amplifyapp.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+      <svg
+        class="link-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+      <rect x="3" y="4" width="18" height="12" rx="2"/>
+      <path d="M12 16v4M8 20h8"/>
+      </svg>
+      <span>Live</span>
+      </a>
+
+      <a
+        href="https://github.com/Arang-K/Pufflet-cafe-landing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+      <svg
+        class="link-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+      <path d="m7 7-5 5 5 5"/>
+      <path d="m17 7 5 5-5 5"/>
+      <path d="m14 4-4 16"/>
+      </svg>
+      <span>GitHub</span>
+      </a>
+    </div>
   </div>
 
+  <!-- 03 Lumiere -->
+  <div class="row image-row skin-row">
+    <span class="number">03</span>
 
-  <!-- 02 PUFFLET CAFE -->
-  <div class="project-card" data-category="landing">
-
-    <div class="project-number">02</div>
-
-    <div class="project-content">
-
-      <h2>Pufflet Cafe</h2>
-
-      <p class="project-description">
-        카페 브랜드를 위한 감성적인 반응형 랜딩페이지를 제작했습니다.
-        <br class="tablet-break">
-        브랜드 분위기와 메뉴, 공간 이미지를 한 페이지 안에서 자연스럽게 전달하도록 구성했습니다.
-      </p>
-
-      <div class="project-tech">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Responsive Web</span>
-      </div>
-
-      <div class="project-links">
-        <a href="https://github.com/Arang-K/Pufflet-cafe-landing" target="_blank">GitHub ↗</a>
-        <a href="https://main.d1d4b9xoh8wah6.amplifyapp.com" target="_blank">Live Site ↗</a>
-      </div>
-
-      <p class="project-status">
-        Responsive landing page
-      </p>
-
-      <p class="project-result">
-        Designed and developed for a cafe brand concept
-      </p>
-
+    <div class="project-copy">
+      <a
+        class="project"
+        href="https://main.dybr212fyjkmz.amplifyapp.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Lumiere Skin <span class="arrow">↗</span>
+      </a>
+      <span class="description">
+        제품과 브랜드 메시지를 담은 스킨케어 웹사이트.
+      </span>
     </div>
 
+    <div class="project-links" aria-label="Lumiere Skin 링크">
+      <a
+        href="https://main.dybr212fyjkmz.amplifyapp.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      ><svg
+        class="link-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+      <rect x="3" y="4" width="18" height="12" rx="2"/>
+      <path d="M12 16v4M8 20h8"/>
+      </svg>
+      <span>Live</span>
+      </a>
+
+      <a
+        href="https://github.com/Arang-K/lumiere-skin-landing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+      <svg
+        class="link-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+      <path d="m7 7-5 5 5 5"/>
+      <path d="m17 7 5 5-5 5"/>
+      <path d="m14 4-4 16"/>
+      </svg>
+      <span>GitHub</span>
+      </a>
+    </div>
   </div>
 
+  <!-- 04 Fitness -->
+  <div class="row image-row fitness-row">
+    <span class="number">04</span>
 
-  <!-- 03 LUMIERE SKIN -->
-  <div class="project-card" data-category="landing">
-
-    <div class="project-number">03</div>
-
-    <div class="project-content">
-
-      <h2>Lumiere Skin</h2>
-
-      <p class="project-description">
-        스킨케어 브랜드를 위한 세련된 반응형 랜딩페이지를 제작했습니다.
-        <br class="tablet-break">
-        제품의 고급스러운 이미지와 핵심 메시지가 자연스럽게 전달되도록 구성했습니다.
-      </p>
-
-      <div class="project-tech">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Responsive Web</span>
-      </div>
-
-      <div class="project-links">
-        <a href="https://github.com/Arang-K/lumiere-skin-landing" target="_blank">GitHub ↗</a>
-        <a href="https://main.dybr212fyjkmz.amplifyapp.com" target="_blank">Live Site ↗</a>
-      </div>
-
-      <p class="project-status">
-        Responsive skincare landing page
-      </p>
-
-      <p class="project-result">
-        Designed and developed for a beauty brand concept
-      </p>
-
+    <div class="project-copy">
+      <a
+        class="project"
+        href="https://main.d3lxgddofqe0zg.amplifyapp.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Fitness Landing <span class="arrow">↗</span>
+      </a>
+      <span class="description">
+        프로그램 소개와 명확한 행동 유도를 담은 피트니스 웹사이트.
+      </span>
     </div>
 
+    <div class="project-links" aria-label="Fitness Landing 링크">
+      <a
+        href="https://main.d3lxgddofqe0zg.amplifyapp.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg
+        class="link-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+        >
+        <rect x="3" y="4" width="18" height="12" rx="2"/>
+        <path d="M12 16v4M8 20h8"/>
+        </svg>
+        <span>Live</span>
+      </a>
+      <a
+        href="https://github.com/Arang-K/fitness-landing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+      <svg
+        class="link-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+      <path d="m7 7-5 5 5 5"/>
+      <path d="m17 7 5 5-5 5"/>
+      <path d="m14 4-4 16"/>
+      </svg>
+      <span>GitHub</span>
+      </a>
+    </div>
   </div>
 
+  <!-- 05 Tokyo -->
+  <div class="row image-row tokyo-row">
+    <span class="number">05</span>
 
-  <!-- 04 FITNESS LANDING -->
-  <div class="project-card" data-category="landing">
-
-    <div class="project-number">04</div>
-
-    <div class="project-content">
-
-      <h2>Fitness Landing</h2>
-
-      <p class="project-description">
-        피트니스 브랜드를 위한 역동적인 반응형 랜딩페이지를 제작했습니다.
-        <br class="tablet-break">
-        강한 비주얼과 명확한 CTA를 중심으로 프로그램과 브랜드 이미지를
-        <br class="tablet-break">
-        효과적으로 전달하도록 구성했습니다.
-      </p>
-
-      <div class="project-tech">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Responsive Web</span>
-      </div>
-
-      <div class="project-links">
-        <a href="https://github.com/Arang-K/fitness-landing" target="_blank">GitHub ↗</a>
-        <a href="https://main.d3lxgddofqe0zg.amplifyapp.com" target="_blank">Live Site ↗</a>
-      </div>
-
-      <p class="project-status">
-        Responsive fitness landing page
-      </p>
-
-      <p class="project-result">
-        Designed and developed for a fitness brand concept
-      </p>
-
+    <div class="project-copy">
+      <a
+        class="project"
+        href="https://main.d2ywregkdjd8p9.amplifyapp.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Tokyo Night <span class="arrow">↗</span>
+      </a>
+      <span class="description">
+        도쿄의 밤을 스크롤과 모션으로 표현한 웹사이트.
+      </span>
     </div>
 
-  </div>
+    <div class="project-links" aria-label="Tokyo Night 링크">
+      <a
+        href="https://main.d2ywregkdjd8p9.amplifyapp.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+      <svg
+        class="link-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+      <rect x="3" y="4" width="18" height="12" rx="2"/>
+      <path d="M12 16v4M8 20h8"/>
+      </svg>
+      <span>Live</span>
+      </a>
 
+      <a
+        href="https://github.com/Arang-K/tokyo-night-landing"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+      <svg
+        class="link-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+      <path d="m7 7-5 5 5 5"/>
+      <path d="m17 7 5 5-5 5"/>
+      <path d="m14 4-4 16"/>
+      </svg>
+      <span>GitHub</span>
+      </a>
 
-  <!-- 05 TOKYO NIGHT -->
-  <div class="project-card" data-category="landing">
-
-    <div class="project-number">05</div>
-
-    <div class="project-content">
-
-      <h2>Tokyo Night</h2>
-
-      <p class="project-description">
-        도쿄의 야경과 네온 감성을 활용한 반응형 랜딩페이지를 제작했습니다.
-        <br class="tablet-break">
-        강한 분위기와 시각적 몰입감을 중심으로 도시의 무드가
-        <br class="tablet-break">
-        자연스럽게 전달되도록 구성했습니다.
-      </p>
-
-      <div class="project-tech">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>Responsive Web</span>
-      </div>
-
-      <div class="project-links">
-        <a href="https://github.com/Arang-K/tokyo-night-landing" target="_blank">GitHub ↗</a>
-        <a href="https://main.d2ywregkdjd8p9.amplifyapp.com" target="_blank">Live Site ↗</a>
-      </div>
-
-      <p class="project-status">
-        Responsive visual landing page
-      </p>
-
-      <p class="project-result">
-        Designed and developed as a visual web design concept
-      </p>
-
-    </div>
-
-  </div>
-
-</section>    
-
-
-<section class="skills-section" id="skills">
-  <p class="section-label">SKILLS</p>
-
-  <div class="skills-card">
-    <div class="skills-content">
-      <h2>Tech Stack</h2>
-
-      <div class="skills">
-        <span>AWS</span>
-        <span>S3</span>
-        <span>CloudFront</span>
-        <span>Route 53</span>
-        <span>IAM</span>
-        <span>AWS Amplify</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
-        <span>GitHub</span>
-      </div>
     </div>
   </div>
 </section>
 
-<section class="contact" id="contact">
-  <p class="section-label">CONTACT</p>
 
-  <div class="contact-card">
-    <div class="contact-content">
-
-      <h2>Let’s Work Together</h2>
-
-      <p>
-        Cloud infrastructure and web projects.
-        Feel free to reach out for collaboration.
-      </p>
-
-      <div class="contact-links">
-        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=arangdevstudio@gmail.com"
-           target="_blank">
-          EMAIL ↗
-        </a>
-
-        <a href="https://github.com/Arang-K" target="_blank">
-          GITHUB ↗
-        </a>
-      </div>
-
-    </div>
+  <div class="foot">
+    <button class="motion" type="button" aria-pressed="false" aria-label="Pause animation">Pause motion</button>
   </div>
-</section>
-</main>
-
-<script src="js/main.js"></script>
-
-</body>
+</div>
+  </body>
 </html>
