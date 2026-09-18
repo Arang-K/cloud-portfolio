@@ -1186,3 +1186,11 @@ html {
   color: #00bc91;
 }
 
+#portfolio #contact-status.is-success {
+  color: #00bc91;
+  font-weight: 500;
+}
+
+#portfolio #contact-status.is-error {
+  color: #9a4d4d;
+}

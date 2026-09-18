@@ -394,9 +394,8 @@ contactForm?.addEventListener("submit", async (event) => {
   const type = document.getElementById("contact-type").value;
   const message = document.getElementById("contact-message").value.trim();
 
+  contactStatus.classList.remove("is-success", "is-error");
   contactStatus.textContent = "Sending...";
-
-  contactStatus.classList.remove("is-success");
 
   try {
     const response = await fetch(
@@ -419,11 +418,18 @@ contactForm?.addEventListener("submit", async (event) => {
       throw new Error("Request failed");
     }
 
+    contactStatus.classList.remove("is-error");
+    contactStatus.classList.add("is-success");
     contactStatus.textContent = "Thanks — I’ll get back to you soon.";
+
     contactForm.reset();
 
   } catch (error) {
     console.error(error);
-    contactStatus.textContent = "Something went wrong. Please try again.";
+
+    contactStatus.classList.remove("is-success");
+    contactStatus.classList.add("is-error");
+    contactStatus.textContent =
+      "Something went wrong. Please try again.";
   }
 });
