@@ -10,28 +10,33 @@ GitHub와 AWS Amplify를 연결해 코드 변경 시 자동으로 배포되는 C
 
 ## Tech Stack
 
-- AWS
-- AWS Amplify
-- Amazon S3
-- CloudFront
-- IAM
-- OIDC
-- GitHub Actions
-- HTML5
-- CSS3
-- JavaScript
-- Git
-- GitHub
-- Responsive Web Design
+* AWS
+* AWS Amplify
+* Amazon S3
+* CloudFront
+* IAM
+* OIDC
+* GitHub Actions
+* Amazon API Gateway
+* AWS Lambda
+* Amazon DynamoDB
+* HTML5
+* CSS3
+* JavaScript
+* Git
+* GitHub
+* Responsive Web Design
 
 ## 주요 기능
 
-- Desktop, Tablet, Mobile 반응형 디자인
-- Cloud / Landing 프로젝트 필터링
-- 스크롤 애니메이션
-- GitHub 및 Live Site 연결
-- AWS Amplify 자동 배포
-- 프로젝트별 기술 스택 정리
+* Desktop, Tablet, Mobile 반응형 디자인
+* Cloud / Landing 프로젝트 필터링
+* 스크롤 애니메이션
+* GitHub 및 Live Site 연결
+* AWS Amplify 자동 배포
+* GitHub Actions 기반 S3 / CloudFront 자동 배포
+* AWS Serverless Contact Form 연동
+* 프로젝트별 기술 스택 정리
 
 ## 배포 구조
 
@@ -83,9 +88,9 @@ GitHub Actions가 실행되면 OIDC를 통해 AWS IAM Role을 사용하여 안�
 
 두 배포 방식 모두 코드 변경 후 배포 과정을 자동화하는 CI/CD 구조를 사용합니다.
 
-- AWS Amplify: GitHub와 연결된 자동 Build & Deploy
-- GitHub Actions: Workflow를 이용한 S3 / CloudFront 자동 배포
-- OIDC: GitHub Actions와 AWS 사이의 안전한 인증
+* AWS Amplify: GitHub와 연결된 자동 Build & Deploy
+* GitHub Actions: Workflow를 이용한 S3 / CloudFront 자동 배포
+* OIDC: GitHub Actions와 AWS 사이의 안전한 인증
 
 ## Architecture Diagram
 
@@ -97,20 +102,45 @@ GitHub Actions가 실행되면 OIDC를 통해 AWS IAM Role을 사용하여 안�
 
 AWS Amplify 자동 배포와 GitHub Actions 기반 AWS 배포 파이프라인을 구성한 개인 포트폴리오 프로젝트입니다.
 
+### Serverless Contact Hub
+
+포트폴리오의 Contact Form을 AWS 서버리스 구조와 연결했습니다.
+
+사용자가 문의를 전송하면 API Gateway를 통해 Lambda가 호출되고,
+입력된 데이터는 DynamoDB에 저장됩니다.
+
+```text
+Contact Form
+     ↓
+API Gateway
+     ↓
+   Lambda
+     ↓
+ DynamoDB
+```
+
+* API Gateway를 이용한 HTTP 요청 처리
+* AWS Lambda 기반 서버리스 백엔드 구성
+* DynamoDB에 문의 데이터 저장
+* 입력값 검증 및 오류 처리
+* 프론트엔드 JavaScript와 API 연동
+
+별도의 서버를 운영하지 않고 요청이 발생할 때만 실행되는 서버리스 구조로 구성했습니다.
+
 ### Landing Pages
 
 카페, 뷰티, 피트니스 등 다양한 브랜드 콘셉트의 반응형 랜딩페이지를 제작했습니다.
 
 ## 향후 개선
 
-- Custom Domain 연결
-- Multi-environment Architecture 확장
-- 추가 Cloud Project 구축
-- 보안 구성 강화
+* Custom Domain 연결
+* Multi-environment Architecture 확장
+* 추가 Cloud Project 구축
+* 보안 구성 강화
 
 ## Author
 
-**Arang**  
+**Arang**
 Cloud & Web Developer
 
 GitHub: https://github.com/Arang-K
